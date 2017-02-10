@@ -4,7 +4,7 @@ defmodule Peepchat.Mixfile do
   def project do
     [app: :peepchat,
      version: "0.0.1",
-     elixir: "~> 1.3.4",
+     elixir: "~> 1.4.1",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -36,7 +36,8 @@ defmodule Peepchat.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:cors_plug, "~> 1.2"}]
+     {:cors_plug, "~> 1.2"},
+     {:guardian, "~> 0.10.0"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
