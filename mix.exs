@@ -19,7 +19,7 @@ defmodule Peepchat.Mixfile do
   def application do
     [mod: {Peepchat, []},
      applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -35,9 +35,11 @@ defmodule Peepchat.Mixfile do
      {:phoenix_ecto, "~> 3.0"},
      {:postgrex, ">= 0.0.0"},
      {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"},
      {:cors_plug, "~> 1.2"},
-     {:guardian, "~> 0.10.0"}]
+     {:ja_serializer, "~> 0.11.2"},
+     {:comeonin, "~> 2.4"},
+     {:guardian, "~> 0.10.0"},
+     {:cowboy, "~> 1.0"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
